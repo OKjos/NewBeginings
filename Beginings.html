@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Beginings Ministries</title>
+    <link rel="stylesheet" type="text/css" href="Beginings.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Beginings.js"></script>
+</head>
+<header>
+    <div class="header-content-container">
+        <img class="Logo" src="Images/NewLogo.jpg" alt="New Beginings Logo">
+        <h1 class="Name-header">New Beginings Ministries</h1>
+    </div>
+    <div class="header-buttons-container">
+        <button class="header-button" id="facebookButton">Facebook</button>
+    </div>
+</header>
+<body>
+    <div class="content-container">
+        <div class="picture-container">
+            <div class="slider">
+                <img src="IMG_8671.JPG" >
+                <img src="IMG_3868.JPG" >
+                <img src="IMG_8343.JPG" >
+            </div>
+        </div>
+        <div class="contact-info">
+            <h1>Address</h1>
+            <h2>16960 N County Road 459 Hillman, MI</h2>
+        </div>
+
+        <div>
+            <div class="center-image-container">
+                <img class="center-image" src="IMG_3910.JPG" >
+            </div>
+        </div>
+
+        <div class="text-group">
+            <div class="left-column">
+                <h1>Food Bank</h1>
+                <h2>First Tuesday 9:00-11:00 A.M.</h2>
+                <h2>Third Tuesday 4:00-6:00 P.M.</h2>
+                <div class="center-image">
+                    <div class="showSlides2">
+                        <img src="61271728516__07F1223E-7519-43A8-B6CC-B6032012CFD2.jpg" >
+                        <img src="IMG_1774.jpg" >
+                        <img src="IMG_5217.jpg" >
+                        <img src="IMG_6464.jpg" >
+                        <img src="IMG_6466.jpg" >
+                        <img src="IMG_6468.jpg" >
+                        <img src="IMG_6470.jpg" >
+                        <img src="IMG_6472.jpg" >
+                    </div>
+                </div>
+                <h2 class="showSlides2-undertext">If Hillman schools are closed due to unsafe weather conditions,</h2>
+                <h2> HARP will be closed but open the next day, weather permitting.</h2>
+            </div>
+            <div class="text-group">
+                <ul>
+                  <li>
+                    <h1>Open Time</h1>
+                    <h2>Fellowship 10:15</h2>
+                    <h2>Worship 11:00</h2>
+                  </li>
+                  <li>
+                    <h1>Email</h1>
+                    <h2><a href="mailto:nbmhillman@gmail.com">nbmhillman@gmail.com</a></h2>
+                  </li>
+                  <li>
+                    <h1>Pastor Information</h1>
+                    <h2>COMING SOON</h2>
+                  </li>
+                </ul>
+              </div>
+     </div>
+    <script>
+        document.getElementById("facebookButton").addEventListener("click", function() {
+            // Handle click for Facebook button
+            window.location.href = "https://www.facebook.com/people/New-Beginnings-Ministries/100064540640575/?mibextid=LQQJ4d";
+        });
+
+        $(document).ready(function() {
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let slides = $('.slider img');
+                for (let i = 0; i < slides.length; i++) {
+                    slides.eq(i).hide();
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides.eq(slideIndex - 1).fadeIn(500);
+                setTimeout(showSlides, 5000); // Change image
+            }
+        });
+
+        $(document).ready(function() {
+            let slideIndex2 = 0;
+            showSlides2();
+
+            function showSlides2() {
+                let slides = $('.showSlides2 img');
+                for (let i = 0; i < slides.length; i++) {
+                    slides.eq(i).hide();
+                }
+                slideIndex2++;
+                if (slideIndex2 > slides.length) {
+                    slideIndex2 = 1;
+                }
+                slides.eq(slideIndex2 - 1).fadeIn(500);
+                setTimeout(showSlides2, 5000); // Change image 
+            }
+        });
+    </script>
+</body>
+</html>
