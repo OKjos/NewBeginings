@@ -61,35 +61,6 @@ header {
     text-align: center;
 }
 
-.text-group ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 50px;
-    list-style: none;
-}
-  
-.text-group li {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-.text-group {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-.text-group .left-column,
-.text-group .right-column {
-    flex: 1;
-}
-
-.left-column {
-    margin-top: 20px;
-    margin-right: 500px;
-}
 .right-column {
     margin-top: 20px;
 }
@@ -105,26 +76,48 @@ header {
     width: 75%;
     height: 50%;
     object-fit: cover;
-}
+} 
 
-.showSlides2-undertext {
-    margin-top: 100px;
-}
 
-.text-group li {
-    margin-bottom: 200px;
-    text-align: center;
+
+
+
+.text-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
 }
 
 .text-group ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-    padding: 50px;
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin-right: 100px;
 }
+
+.text-group ul li {
+    margin-bottom: 300px;
+}
+
+.text-group-con {
+    flex: 1;
+    margin-left: 20px;
+
+}
+
+.text-group .left-column,
+.text-group .right-column {
+    flex: 1;
+}
+
+
+
+
+
+.showSlides2-undertext {
+    margin-top: 150px;
+}
+
 
 .slider img {
     display: block;
@@ -136,3 +129,27 @@ header {
 .contact-info {
     font-size: 20px;
 }
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #somethingorother {
+      width: 120px ;
+    }
+  }
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #somethingorother {
+      width: 320px ;
+    }
+  }
+  @media screen and (min-width: 481px) {
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    #somethingorother {
+      width: 480px ;
+    }
+  }
