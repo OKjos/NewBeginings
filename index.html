@@ -12,6 +12,7 @@
     </div>
     <div class="header-buttons-container">
         <button class="header-button" id="facebookButton">Facebook</button>
+        <button class="header-button" id="galleryButton" onclick="openGallery()">Gallery</button>
     </div>
 </header>
 <body>
@@ -49,6 +50,7 @@
                         <img src="IMG_6468.jpg" >
                         <img src="IMG_6470.jpg" >
                         <img src="IMG_6472.jpg" >
+                        <img src="IMG_5343.jpg" >
                     </div>
                 </div>
                 <h2 class="showSlides2-undertext">If Hillman schools are closed due to unsafe weather conditions,</h2>
@@ -114,6 +116,11 @@
                 setTimeout(showSlides2, 5000); // Change image 
             }
         });
+
+
+        function openGallery() {
+    window.location.href = "gallery.html";
+  }
     </script>
 </body>
 </html>
