@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    
+    background: linear-gradient(to bottom right, #2098C7 0%, #8fd3f4 51%, #FFD700 100%);
 }
 
 header {
@@ -13,11 +13,11 @@ header {
     background-color: rgb(32, 152, 199);
     z-index: 9999;
     width: 100vw;
-    height: 60px;
+    height: 8vh;
     display: flex;
     justify-content: flex-start;
     align-items: center; 
-    padding: 0 20px; 
+    padding: 0 1vw; 
     margin: 0;
 }
 
@@ -25,13 +25,13 @@ header {
     background-color: rgb(32, 152, 199);
     border: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 190%;
     cursor: pointer;
-    margin: 15px 60px;
+    margin: 2vw 2vh;
 }
 
 .header-button:hover {
-    color: #ffffff;
+    color: #727272;
 }
 
 .header-content-container {
@@ -40,34 +40,33 @@ header {
 }
 
 .Logo {
-    margin-right: 10px;
-    width: 75px;
-    height: 75px;
+    margin-top: 1%;
+    margin-right: 2%;
+    width: 10vw;
+    height: 10vh;
+    max-width: 100px;
+    object-fit: contain;
+
 }
+
+
 
 .Name-header {
     color: rgb(255, 255, 255);
     margin: 0;
 }
 
-.Name {
-    color: rgb(236, 104, 104);
-    margin-top: 100px;
-}
 
 .content-container {
-    margin-top: 100px;
+    margin-top: 5%;
     width: 100%;
     text-align: center;
 }
 
-.right-column {
-    margin-top: 20px;
-}
 
 .center-text {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20%;
 }
 
 .center-image {
@@ -85,7 +84,7 @@ header {
 .text-group {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 10%;
     flex-wrap: wrap;
 }
 
@@ -96,12 +95,12 @@ header {
 }
 
 .text-group ul li {
-    margin-bottom: 300px;
+    margin-bottom: 40%;
 }
 
 .text-group-con {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 5%;
 
 }
 
@@ -110,46 +109,15 @@ header {
     flex: 1;
 }
 
-
-
-
-
 .showSlides2-undertext {
-    margin-top: 150px;
+    margin-top: 25%;
+    width: 75%;
 }
 
 
 .slider img {
     display: block;
     margin: 0 auto;
-    width: 75%;
-    height: 950px; /* Adjust the height value as needed */
+    width: 90vw;
+    height: 100vh; /* Adjust the height value as needed */
 }
-
-.contact-info {
-    font-size: 20px;
-}
-
-
-
-
-
-
-@media screen and (max-width: 320px) {
-    /* comes into effect for screens less than or equal to 320 pixels */
-    #somethingorother {
-      width: 120px ;
-    }
-  }
-  @media screen and (min-width: 321px) and (max-width: 480px) {
-    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-    #somethingorother {
-      width: 320px ;
-    }
-  }
-  @media screen and (min-width: 481px) {
-    /* comes into effect for screens larger than or equal to 481 pixels */
-    #somethingorother {
-      width: 480px ;
-    }
-  }
