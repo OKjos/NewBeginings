@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery Site</title>
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button class="back-button" id="back" onclick="back()">Back</button>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="IMG_8671.jpg" alt="Image 1">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_3868.jpg" alt="Image 2">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_8343.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="61271728516__07F1223E-7519-43A8-B6CC-B6032012CFD2.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_1774.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_5217.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_6464.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_6466.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_6468.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_6470.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_6472.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_5343.jpg" alt="Image 3">
+            <span class="inspect-icon">&#128269;</span>
+        </div>
+
+        <!-- Add more gallery items as needed -->
+    </div>
+
+    <div class="enlarged-image">
+        <img src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const enlargedImageContainer = document.querySelector('.enlarged-image');
+
+        galleryItems.forEach(item => {
+            const inspectIcon = item.querySelector('.inspect-icon');
+            const image = item.querySelector('img');
+
+            item.addEventListener('click', () => {
+                const imageSrc = image.src;
+                const isEnlarged = enlargedImageContainer.classList.contains('enlarged');
+
+                if (isEnlarged) {
+                    enlargedImageContainer.classList.remove('enlarged');
+                    enlargedImageContainer.style.display = 'none';
+                } else {
+                    enlargedImageContainer.classList.add('enlarged');
+                    enlargedImageContainer.style.display = 'block';
+                    enlargedImageContainer.querySelector('img').src = imageSrc;
+                }
+            });
+
+            inspectIcon.addEventListener('click', event => {
+                event.stopPropagation();
+                const imageSrc = image.src;
+                const isEnlarged = enlargedImageContainer.classList.contains('enlarged');
+
+                if (isEnlarged) {
+                    enlargedImageContainer.classList.remove('enlarged');
+                    enlargedImageContainer.style.display = 'none';
+                } else {
+                    enlargedImageContainer.classList.add('enlarged');
+                    enlargedImageContainer.style.display = 'block';
+                    enlargedImageContainer.querySelector('img').src = imageSrc;
+                }
+            });
+        });
+
+        enlargedImageContainer.addEventListener('click', () => {
+            enlargedImageContainer.classList.remove('enlarged');
+            enlargedImageContainer.style.display = 'none';
+        });
+
+        function back() {
+            window.location.href = "Beginings.html";
+        }
+    </script>
+</body>
+</html>
