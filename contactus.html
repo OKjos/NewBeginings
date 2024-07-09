@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Constact Us</title>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="images/NewLogo.jpg" width="100" alt="New Beginnings Logo">New Beginnings Ministries</a></h1>
+  </header>
+  <nav class="sitenavigation">
+    <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="aboutus.html">About Us</a></li>
+       <li><a href="contactus.html">Contact Us</a></li>
+       <li><a href="foodbank.html">Foodbank</a></li>
+       <li><a href="photos.html">Photos</a></li>
+    </ul>
+ </nav>
+ <figure>
+  <img src="images/IMG_3910.jpg" width="1040" height="700" alt="New Beginnings Entrance">
+ </figure>
+
+ <article>
+  <aside>
+    <h2>Location</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>16960 N County Rd 459 &bull; Hillman, MI</td>
+        </tr>
+        <tr>
+          <td>Contact Hours</td>
+        </tr>
+        <tr>
+          <td>9:00 A.M. - 3 P.M.</td>
+        </tr>
+        <tr>
+         <td>Contact Number</td>
+        </tr>
+        <tr>
+         <td>(989) 742-2539</td>
+        </tr>
+      </tbody>
+    </table>
+  </aside>
+ </article>
+
+
+ <article id="contentstart">
+  <div class="container">
+     <form action="results.html">
+        <fieldset class="contactinfo">
+           <legend>Contact Information</legend>
+           <label for="nameinput">
+              Name
+              <input type="text" name="name" id="nameinput" placeholder=" First and last name">
+           </label>
+           <label for="emailinput">
+              Email 
+              <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+           </label>
+           <label for="phoneinput">
+              Phone
+              <input type="tel" name="phone" id="phoneinput">
+           </label>
+        </fieldset>
+        <fieldset class="reserveinfo">
+           <legend>Reservation Information</legend>
+           <fieldset class="schedule">
+              <legend>Schedule</legend>
+              <p>Date of event</p>
+              <div class="date-picker">
+                 <label for="checkin-month"></label>
+                 <select id="checkin-month" name="checkin-month">
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                 </select>
+                 <label for="checkin-day"></label>
+                 <select id="checkin-day" name="checkin-day">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                 </select>
+                 <label for="checkin-year"></label>
+                 <select id="checkin-year" name="checkin-year">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                 </select>
+              </div>
+              <label for="stay-nights">
+                 Number of times
+                 <input type="number" name="nights" id="stay-nights">
+              </label>
+           </fieldset>
+           <fieldset>
+              <legend class="occasioninfo">What's the occasion for your visit?</legend>
+              <label for="vacation">
+                 <input type="radio" name="occasion" id="vacation" value="Vacation" checked>
+                 Visitation
+              </label>
+              <label for="celebration">
+                 <input type="radio" name="occasion" id="celebration" value="Celebration">
+                 Celebration
+              </label>
+              <Label for="event">
+                 <input type="radio" name="occasion" id="event" value="Special Event">
+                 Special Event
+              </Label>
+           </fieldset>
+        </fieldset>
+        <fieldset class="additionalinfo">
+           <legend>Additional Information</legend>
+           <label for="feedback">
+              Feedback, special requests, or other information
+              <textarea name="feedback" id="feedback" rows="4" cols="55">
+              </textarea>
+           </label>
+        </fieldset>
+        <fieldset class="submitbutton">
+           <input type="submit" id="submit" value="Submit">
+        </fieldset>
+     </form>
+  </div>
+</article>
+
+
+
+
+<footer>
+  <p>16960 N County Rd 459 &bull; Hillman, MI &bull; (989) 742-2539</p>
+ </footer>
+</body>
+</html>
