@@ -259,12 +259,13 @@ label {
   background-color: #585858;
 }
 
+.centered-article {
+  text-align: center;
+  display: block; /* add this to make it a block-level element */
+}
 
-.container {
-  max-width: 80%; /* adjust the max-width to your liking */
+.centered-article table {
   margin: 0 auto;
-  padding: 0 3% 1em;
-    overflow: auto;
 }
 
 @media screen and (min-width: 200px) and (max-width: 479px) {
