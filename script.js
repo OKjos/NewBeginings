@@ -1,5 +1,30 @@
-var slideIndex = 0;
-carousel();
+let slideIndex = 0;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  carousel();
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          entry.target.classList.remove('hidden');
+        } else {
+          entry.target.classList.remove('show');
+          entry.target.classList.add('hidden');
+        }
+      });
+    },
+    {
+      threshold: 0,
+    }
+  );
+
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+});
+
 
 function carousel() {
   var i;
@@ -9,6 +34,8 @@ function carousel() {
   }
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 2010); // Change image every 2 seconds
+  if (x.length > 0) {
+    x[slideIndex - 1].style.display = "block";
+  }
+  setTimeout(carousel, 2010);
 }
