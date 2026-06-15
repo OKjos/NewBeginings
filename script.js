@@ -1,6 +1,5 @@
 let slideIndex = 0;
 
-
 document.addEventListener('DOMContentLoaded', () => {
   carousel();
   const observer = new IntersectionObserver(
